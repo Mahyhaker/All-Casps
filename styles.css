@@ -1,0 +1,210 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+  font-family: Arial, sans-serif;
+  color: #dcdcdc;
+  background-color: #0d0d0d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #121212;
+}
+
+header h1 {
+  font-family: 'Creepster', cursive;
+  font-size: 2.5rem;
+  color: #4e9a6e;
+}
+
+header nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #b3e5cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #4e9a6e;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url('images/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.hero-content {
+  text-align: center;
+  color: #d0f3e4;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #80cda9;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #b3e5cc;
+}
+
+.hero .button {
+  padding: 10px 20px;
+  background: #4e9a6e;
+  color: #0d0d0d;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero .button:hover {
+  background: #80cda9;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  color: #dcdcdc;
+}
+
+.section.dark {
+  background: #191919;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  color: #80cda9;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-item, .myth-item {
+  width: 180px;
+}
+
+.gallery-item img, .myth-item img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover, .myth-item img:hover {
+  transform: scale(1.05);
+}
+
+.myth-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.myth-item p {
+  color: #80cda9;
+}
+
+/* Biografia */
+#bio img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#bio p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #b3e5cc;
+}
+
+/* Newsletter */
+#newsletter {
+  background: #121212;
+}
+
+#newsletter h2 {
+  color: #4e9a6e;
+}
+
+#newsletter p {
+  font-size: 1.1rem;
+  color: #b3e5cc;
+  margin-bottom: 20px;
+}
+
+#newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#newsletter input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
+}
+
+#newsletter button {
+  padding: 10px 20px;
+  background: #4e9a6e;
+  color: #0d0d0d;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#newsletter button:hover {
+  background: #80cda9;
+}
+
+/* Footer */
+footer {
+  background: #0d0d0d;
+  color: #4e9a6e;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social a {
+  color: #80cda9;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer .social a:hover {
+  color: #4e9a6e;
+}
